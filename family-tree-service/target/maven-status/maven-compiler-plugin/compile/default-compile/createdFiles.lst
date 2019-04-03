@@ -1,0 +1,16 @@
+com\family\service\resource\RelationTypeResource.class
+com\family\service\helper\DateHandler.class
+com\family\service\repository\MarriageRepository.class
+com\family\service\repository\RelationTypeRepository.class
+com\family\service\repository\RelationshipRepository.class
+com\family\service\model\Marriage.class
+com\family\service\model\Relations.class
+com\family\service\resource\PersonResource.class
+com\family\service\model\RelationType.class
+com\family\service\FamilyTreeServiceApplication.class
+com\family\service\model\Person.class
+com\family\service\exception\DataNotFoundException.class
+com\family\service\model\RelationInfo.class
+com\family\service\resource\RelationshipResource.class
+com\family\service\helper\Link.class
+com\family\service\repository\PersonRepository.class

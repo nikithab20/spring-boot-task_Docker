@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  mysql-container:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=1234
+    volumes:
+      - /data/mysql
+  family-tree-service-app:
+    image: family-tree-service-image
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql-container
+    ports:
+      - 8100:8100
+    volumes:
+      - /data/family-tree-service-app
