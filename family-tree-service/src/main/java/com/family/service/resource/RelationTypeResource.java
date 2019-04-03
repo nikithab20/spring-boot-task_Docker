@@ -16,7 +16,11 @@ public class RelationTypeResource {
 	@Autowired
     private RelationTypeRepository relationTypeRepository;
 
-    @PostMapping
+    public RelationTypeResource(RelationTypeRepository relationtypeRepository) {
+		this.relationTypeRepository=relationtypeRepository;
+	}
+
+	@PostMapping
     public RelationType addRelationType(@RequestBody RelationType relationType){
     	try {
     		relationTypeRepository.save(relationType);

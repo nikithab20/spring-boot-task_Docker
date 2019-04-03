@@ -1,12 +1,10 @@
 package com.family.service.model;
 
-public class RelationInfo {
+public class MarriageInfo {
 	
 	private Integer personId;
 	private Integer spouseId;
-	private Integer relativeId;
 	private Integer marriageId;
-	private String relation;
 	
 	public Integer getPersonId() {
 		return personId;
@@ -19,18 +17,6 @@ public class RelationInfo {
 	}
 	public void setSpouseId(Integer spouseId) {
 		this.spouseId = spouseId;
-	}
-	public Integer getRelativeId() {
-		return relativeId;
-	}
-	public void setRelativeId(Integer relativeId) {
-		this.relativeId = relativeId;
-	}
-	public String getRelation() {
-		return relation;
-	}
-	public void setRelation(String relation) {
-		this.relation = relation;
 	}
 	public Integer getMarriageId() {
 		return marriageId;

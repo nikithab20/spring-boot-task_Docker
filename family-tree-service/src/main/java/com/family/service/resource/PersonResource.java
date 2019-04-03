@@ -23,7 +23,11 @@ public class PersonResource {
 	@Autowired
     private PersonRepository personRepository;
 
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public PersonResource(PersonRepository personRepository) {
+		this.personRepository=personRepository;
+	}
+
+	@RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public Person getPersonById(@PathVariable Integer id) {
     	Person person=null;
     	try {

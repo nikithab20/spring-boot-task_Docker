@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.0
+Built-By: rian
+Build-Jdk: 11.0.2
+Implementation-Title: family-tree-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.family.service
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/family-tree-service
+

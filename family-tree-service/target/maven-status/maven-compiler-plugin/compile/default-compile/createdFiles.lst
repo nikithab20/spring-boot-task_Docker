@@ -13,4 +13,5 @@ com\family\service\exception\DataNotFoundException.class
 com\family\service\model\RelationInfo.class
 com\family\service\resource\RelationshipResource.class
 com\family\service\helper\Link.class
+com\family\service\model\MarriageInfo.class
 com\family\service\repository\PersonRepository.class
