@@ -2,7 +2,7 @@
 
 # Endpoints :
 
-1: To Add person details: http://localhost:8100/people
+1: POST- To Add person details: http://localhost:8100/people
 
 Sample JSON Request : {
     "personName": "Meera",
@@ -12,7 +12,7 @@ Sample JSON Request : {
     "dateOfBirth": "1992-02-25"
 }
 
-2:To Get Person Details using Id :http://localhost:8100/people/1
+2:GET - To Get Person Details using Id :http://localhost:8100/people/1
 
 OutPut
 
@@ -26,7 +26,7 @@ OutPut
 }
 
 
-3:To Get list of people with name :http://localhost:8100/people/?name=Meera
+3: GET - To Get list of people with name :http://localhost:8100/people/?name=Meera
 
 [
     {
@@ -55,7 +55,7 @@ OutPut
     }
 ]
 
-4: To post Marriage relationship between two people : http://localhost:8100/people/relationships
+4: POST - To post Marriage relationship between two people : http://localhost:8100/people/relationships
 
 Sample JSON Request :
 
@@ -64,7 +64,7 @@ Sample JSON Request :
 	"spouseId":3
 }
 
-5: To Update Marriage relationship to Divorce between two people : http://localhost:8100/people/relationships
+5: PUT-  To Update Marriage relationship to Divorce between two people : http://localhost:8100/people/relationships
 
 Sample JSON Request :
 
@@ -73,7 +73,7 @@ Sample JSON Request :
 	"spouseId":3
 }
 
-6 : To Add relation between two people  : http://localhost:8100/people/relationships
+6 : POST - To Add relation between two people  : http://localhost:8100/people/relationships
 
 Sample JsOn Request
 
@@ -93,6 +93,17 @@ Output :
         "relation_description": "Brother"
     }
 ]
+
+8 : POST - To add new relation Types  : http://localhost:8100/people/relationships/types
+
+Sample json request
+
+{
+    "relationName": "Uncle",
+    "relnWithParent" : "parents Sibling",
+    "sexCriteria":"Male"
+}
+
 
 
 
